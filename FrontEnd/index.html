@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OnirContract Interface</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    button {
+      margin: 5px;
+      padding: 10px;
+      font-size: 16px;
+    }
+
+    input {
+      padding: 10px;
+      font-size: 16px;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>OnirContract Interface</h1>
+    <button id="connectWallet">Connect Wallet</button>
+    <p id="walletAddress"></p>
+
+    <h2>Contract Actions</h2>
+    <button id="addIncome">Add Income</button>
+    <input type="text" id="incomeAmount" placeholder="Enter ETH amount">
+    <button id="useBudget">Use Budget</button>
+    <input type="text" id="budgetAmount" placeholder="Enter ETH amount">
+    <button id="paySalary">Pay Salary</button>
+    <button id="distributeProfits">Distribute Profits</button>
+    <h2>Contract State</h2>
+    <p>Company Income: <span id="companyIncome"></span> ETH</p>
+    <p>Last Salary Payment: <span id="lastSalaryPayment"></span></p>
+    <p>Last Profit Distribution: <span id="lastProfitDistribution"></span></p>
+  </div>
+  <script src="https://cdn.ethers.io/lib/ethers-5.6.umd.min.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
